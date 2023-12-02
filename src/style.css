@@ -1,0 +1,108 @@
+:root {
+    --arrow-bg: rgba(255, 255, 255, 0.3);
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: rgba(97, 97, 97);
+    --select-bg: rgba(255, 255, 255, 0.2);
+  }
+  
+.carta-title{
+    font-size: 15px;
+}
+ 
+.carta-level{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.carta-title-Monster{
+    font-size: 13px;
+}
+
+.carta-Race{
+    font-size: 8px;
+    margin-bottom: 1px !important;
+}
+
+.carta-atkDef{
+  font-size: 7px ;
+  margin-top: 6px;
+  margin-right: 7px !important;
+}
+
+.fondo{
+    background-image: url('/fondo_cartas.jpg');
+    background-size: contain;
+    
+}
+.carta-desc{
+    font-size: 8px;
+    display: -webkit-box; /* para compatibilidad con navegadores basados en WebKit */
+    -webkit-line-clamp: 3; /* número máximo de líneas a mostrar */
+    -webkit-box-orient: vertical; /* orientación del contenido */
+    overflow: hidden; /* oculta el texto que se desborda del contenedor */
+    text-overflow: ellipsis;
+    line-height: 1;
+    
+}
+.carta-description{
+  height: 20px;
+  margin-bottom: 11px;
+}
+.carta-btn{
+  height: 8px !important; 
+  font-size: 8px !important;
+  margin-right: 50px !important;
+  margin-bottom: 4px !important;
+}
+
+.title {
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.btn-trap-spell{
+    width: 105px !important;
+    height: 40px !important;
+}
+
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 20rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+      linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+    /* Remove focus outline */
+    &:focus {
+      outline: none;
+    }
+    /* <option> colors */
+    
+  }
+
+option  {
+    color: inherit;
+    background-color: var(--option-bg);
+    border-radius: 10px;
+  }
+
+.imgNavbar{
+  width: 100px;
+  height: 50px;
+}
