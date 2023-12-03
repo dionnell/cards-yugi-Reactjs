@@ -1,7 +1,7 @@
 import { YugiCard } from "./YugiCard";
 import { useFetchCards } from "../hook/useFetchCards";
 import { useState } from "react";
-import { Pagination }  from './Pagination'
+import { Pagination }  from './temp'
 
 
 export const ListSpells = ({category}) => {
@@ -39,7 +39,9 @@ export const ListSpells = ({category}) => {
       <Pagination 
         postPerPage={postPerPage} 
         TotalPost={images.length} 
-        paginate={paginate} />
+        paginate={paginate}
+        currentPage={currentPage}
+        setcurrentPage={setCurrentPage} />
       <br />
 
     </>
