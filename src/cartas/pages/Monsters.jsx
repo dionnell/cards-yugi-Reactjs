@@ -38,48 +38,48 @@ export const Monsters = () => {
   return(
       <>
           <div className="fondo">
-          <div className="container ">
-              
-              <div className="container">
-                  <div className="row col-12">
-                  <h2>Monster Cards</h2>
-                  </div>
-              </div>
-              <hr />
-
-              <div className="container">
-                  <div className="row justify-content-between align-items-center">
-                    <div className="col 4">
-                      <h2>Monster Type</h2>
-                      <select
-                        value={categories} 
-                        onChange={e => setCategories(e.target.value)} 
-                      >
-                        {Object.entries(valor).map(c => (
-                          <option value={c[1]}>{c[0]}</option>
-                        ))}
-                      </select>
+            <div className="container ">
+                
+                <div className="container">
+                    <div className="row col-12">
+                    <h2>Monster Cards</h2>
                     </div>
-
-                    <div className="col 4">
-                      <h2>Order</h2>
-                      <select
-                        value={AtkDef} 
-                        onChange={e => setAtkDef(e.target.value)} 
-                      >
-                        <option value=''>--</option>
-                        <option value="&sort=atk">Atack</option>
-                        <option value="&sort=def">Defence </option>
-                        <option value="&sort=level">Level</option>
-                      </select>
+                </div>
+                <hr />
+    
+                <div className="container">
+                    <div className="row justify-content-between align-items-center">
+                      <div className="col 4">
+                        <h2>Monster Type</h2>
+                        <select
+                          value={categories} 
+                          onChange={e => setCategories(e.target.value)} 
+                        >
+                          {Object.entries(valor).map(c => (
+                            <option value={c[1]}>{c[0]}</option>
+                          ))}
+                        </select>
+                      </div>
+                          
+                      <div className="col 4">
+                        <h2>Order</h2>
+                        <select
+                          value={AtkDef} 
+                          onChange={e => setAtkDef(e.target.value)} 
+                        >
+                          <option value=''>--</option>
+                          <option value="&sort=atk">Atack</option>
+                          <option value="&sort=def">Defence </option>
+                          <option value="&sort=level">Level</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-              </div>
-
-              <hr className="mb-4" />    
-
-              <ListSpells key={categories+AtkDef} category={categories+AtkDef}  />
-           </div>
+                </div>
+                          
+                <hr className="mb-4" />    
+                          
+                <ListSpells key={categories+AtkDef} category={categories+AtkDef}  />
+             </div>
            </div>
       </>
   )

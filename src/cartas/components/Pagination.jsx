@@ -1,6 +1,6 @@
 
 
-export const pagination = ({postPerPage, TotalPost}) => {
+export const Pagination = ({postPerPage, TotalPost, paginate}) => {
 
     const pageMunbers = []
 
@@ -10,19 +10,19 @@ export const pagination = ({postPerPage, TotalPost}) => {
 
   return (
 
+    <>
     <nav>
         <ul className="pagination">
             {pageMunbers.map(number => (
                 <li key={number} className="page-item" >
-                    <a href="!#" className="page-link">
+                    <a onClick={ () => paginate(number) } href="#" className="page-link">
                         {number}
                     </a>
                 </li>
             ))}
         </ul>
     </nav>
-
+    </>
   )
 }
 
-export default pagination
