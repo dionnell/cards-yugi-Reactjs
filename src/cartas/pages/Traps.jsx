@@ -25,7 +25,7 @@ export const Traps = ({value}) => {
 
     return(
         <>
-            <div className="fondo">
+            <div className="fondo pt-4">
             <div className="container ">
                 
                 <div className="container">
@@ -37,22 +37,22 @@ export const Traps = ({value}) => {
                 <div className="container">
                     <div className="row justify-content-around align-items-center">
                         <div className="col mt-2 mb-2" >
-                            <button   onClick={onAllRace} className="btn btn-primary btn-trap-spell" >
+                            <button   onClick={onAllRace} className="button-85 btn-trap-spell" >
                                 All Traps
                             </button>
                         </div>
                         <div className="col-2 mt-2 mb-2" >
-                            <button  onClick={onNormalRace} className="btn btn-primary btn-trap-spell" >
+                            <button  onClick={onNormalRace} className="button-85 btn-trap-spell" >
                                 Normal 
                             </button>
                         </div>
                         <div className="col-2 mt-2 mb-2" >
-                            <button onClick={onContinuousdRace} className="btn btn-primary btn-trap-spell">
+                            <button onClick={onContinuousdRace} className="button-85 btn-trap-spell">
                                 Continuous 
                             </button>
                         </div>
                         <div className="col-2 mt-2 mb-2" >
-                            <button onClick={onCounterRace} className="btn btn-primary btn-trap-spell">
+                            <button onClick={onCounterRace} className="button-85 btn-trap-spell">
                                 Counter 
                             </button>
                         </div>

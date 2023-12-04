@@ -37,48 +37,48 @@ export const Spells = ({value}) => {
 
     return(
         <>
-            <div className="fondo">
+            <div className="fondo pt-4">
                 <div className="container ">
                     
                     <div className="container ">
-                        <div className="row col-12">
+                        <div className="row col-12 mb-2">
                             <h2>Spells Cards</h2>
                         </div>
                     </div>
                     <div className="container">
                         <div className="row justify-content-between align-items-center">
                             <div className="col mt-2 mb-2" >
-                                <button   onClick={onAllRace} className="btn btn-primary btn-trap-spell" >
+                                <button   onClick={onAllRace} role="button" className="button-85 btn-trap-spell" >
                                     All Spell
                                 </button>
                             </div>
                             <div className="col mt-2 mb-2" >
-                                <button  onClick={onNormalRace} className="btn btn-primary btn-trap-spell" >
+                                <button  onClick={onNormalRace} className="button-85 btn-trap-spell" >
                                     Normal 
                                 </button>
                             </div>
                             <div className="col mt-2 mb-2" >
-                                <button onClick={onFieldRace} className="btn btn-primary btn-trap-spell">
+                                <button onClick={onFieldRace} className="button-85 btn-trap-spell">
                                     Field 
                                 </button>
                             </div>
                             <div className="col mt-2 mb-2" >
-                                <button onClick={onEquipRace} className="btn btn-primary btn-trap-spell">
+                                <button onClick={onEquipRace} className="button-85 btn-trap-spell">
                                     Equip 
                                 </button>
                             </div>
                             <div className="col mt-2 mb-2" >
-                                <button onClick={onContinuousRace} className="btn btn-primary btn-trap-spell" > 
+                                <button onClick={onContinuousRace} className="button-85 btn-trap-spell" > 
                                     Continuous 
                                 </button>
                             </div>
                             <div className="col mt-2 mb-2" >
-                                <button onClick={onQuickRace} className="btn btn-primary btn-trap-spell"> 
+                                <button onClick={onQuickRace} className="button-85 btn-trap-spell"> 
                                     Quick-Play 
                                 </button>
                             </div>
                             <div className="col mt-2 mb-2" >
-                                <button onClick={onRitualRace} className="btn btn-primary btn-trap-spell"> 
+                                <button onClick={onRitualRace} className="button-85 btn-trap-spell"> 
                                     Ritual 
                                 </button>
                             </div>

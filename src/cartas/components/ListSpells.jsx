@@ -2,6 +2,7 @@ import { YugiCard } from "./YugiCard";
 import { useFetchCards } from "../hook/useFetchCards";
 import { useState } from "react";
 import { Pagination }  from './temp'
+import { SwishSpinner } from "react-spinners-kit";
 
 
 export const ListSpells = ({category}) => {
@@ -23,6 +24,16 @@ export const ListSpells = ({category}) => {
     <>
    
       <div className="container" >
+        {
+        isLoading && (<div className="row justify-content-center mb-5">
+                        <div className="col-2">
+                          <SwishSpinner
+                          size={100}
+                          color="#686769"
+                          />
+                        </div>
+                      </div>)
+        }
         <div className="row  rows-cols-1 row-cols-md-4 g-3 ">
             { 
                 currentPost.map( image => ( 

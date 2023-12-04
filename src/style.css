@@ -8,21 +8,37 @@
 .carta-title{
     font-size: 15px;
 }
+.carta-titleSpell-Modal{
+  font-size: 16px;
+  padding-top: 30px;
+  padding-left: 17px;
+}
  
 .carta-level{
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .carta-title-Monster{
     font-size: 13px;
 }
 
+.carta-title-Monster-Modal{
+  font-size: 14px;
+  padding-top: 30px;
+  padding-left: 17px;
+}
+
 .carta-Race{
     font-size: 8px;
     margin-bottom: 1px !important;
 }
-
+.carta-Race-Modal{
+  font-size: 10px;
+  margin-bottom: 1px !important;
+  margin-left: 20px;
+}
 .carta-atkDef{
   font-size: 7px ;
   margin-top: 6px;
@@ -44,14 +60,49 @@
     line-height: 1;
     
 }
+
+.carta-desc-Modal{
+  font-size: 10px;
+  display: -webkit-box; /* para compatibilidad con navegadores basados en WebKit */
+  -webkit-line-clamp: 3; /* número máximo de líneas a mostrar */
+  -webkit-box-orient: vertical; /* orientación del contenido */
+  overflow: auto; /* oculta el texto que se desborda del contenedor */
+  text-overflow: ellipsis;
+  line-height: 1;
+  height: 75px;
+  
+}
+
+.carta-description-Modal{
+  height: 80px;
+  margin-bottom: 11px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.carta-descriptionMonster-Modal{
+  height: 68px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.carta-descMonster-Modal{
+  font-size: 10px;
+  display: -webkit-box; /* para compatibilidad con navegadores basados en WebKit */
+  -webkit-line-clamp: 3; /* número máximo de líneas a mostrar */
+  -webkit-box-orient: vertical; /* orientación del contenido */
+  overflow: auto; /* oculta el texto que se desborda del contenedor */
+  text-overflow: ellipsis;
+  line-height: 1;
+  height: 60px;
+  
+}
 .carta-description{
   height: 20px;
   margin-bottom: 11px;
 }
 .carta-btn{
-  height: 8px !important; 
-  font-size: 8px !important;
-  margin-right: 50px !important;
+  height: 15px !important;   
   margin-bottom: 4px !important;
 }
 
@@ -60,6 +111,12 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+.title-Modal {
+  width: 300px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .btn-trap-spell{
@@ -103,38 +160,88 @@ option  {
   }
 
 .imgNavbar{
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
 }
 
-/* Pagination */
-.pageNumbers {
-  list-style: none;
-  display: flex;
-}
+/* btn */
 
-.pageNumbers li {
-  padding: 10px;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.pageNumbers li.active {
-  background-color: white;
-  color: black;
-}
-
-.pageNumbers li button {
-  background-color: transparent;
+.button-85 {
   border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-.pageNumbers li button:hover {
-  background-color: white;
-  color: black;
-}
-.pageNumbers li button:focus {
   outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:hover {
+  &:before{
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* fin btn */
+
+.Modal {
+  position: absolute;
+  top: 50px;
+  left: 40%;
+  right: 50%;
+  bottom: 40px;
+  width: 350px;
+  height: 500px;
 }

@@ -49,6 +49,7 @@ export const Pagination = ({postPerPage, TotalPost, paginate, currentPage, setcu
             <ul className="pagination justify-content-center">
                 <button
                     onClick={handlePrevbtn}
+                    className="page-link"
                     disabled={currentPage == pageMunbers[0] ? true : false}
                 >
                     Prev
@@ -68,6 +69,7 @@ export const Pagination = ({postPerPage, TotalPost, paginate, currentPage, setcu
 
                 <button
                     onClick={handleNextbtn}
+                    className="page-link"
                     disabled={currentPage == pageMunbers[pageMunbers.length - 1] ? true : false}
                 >
                     Next

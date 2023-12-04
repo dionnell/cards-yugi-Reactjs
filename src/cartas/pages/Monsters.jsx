@@ -37,7 +37,7 @@ export const Monsters = () => {
   
   return(
       <>
-          <div className="fondo">
+          <div className="fondo pt-4">
             <div className="container ">
                 
                 <div className="container">
