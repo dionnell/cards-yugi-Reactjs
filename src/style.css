@@ -245,3 +245,70 @@ option  {
   width: 350px;
   height: 500px;
 }
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: #383838;
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #484848;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #545454;
+}
+
+body::-webkit-scrollbar-track {
+  background: #727272;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #818181;
+}
+
+
+.carta-descMonster-Modal::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+.carta-descMonster-Modal::-webkit-scrollbar-thumb {
+  background: #383838;
+  border-radius: 4px;
+}
+.carta-descMonster-Modal::-webkit-scrollbar-thumb:hover {
+  background: #484848;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.carta-descMonster-Modal::-webkit-scrollbar-thumb:active {
+  background-color: #545454;
+}
+
+.carta-descMonster-Modal::-webkit-scrollbar-track {
+  background: #727272;
+  border-radius: 4px;
+}
+
+.carta-descMonster-Modal::-webkit-scrollbar-track:hover,
+.carta-descMonster-Modal::-webkit-scrollbar-track:active {
+  background: #818181;
+}
+
+.gradientYugicardSearch{
+  background: linear-gradient(0deg, rgba(182,182,182,1) 0%, rgba(231,230,230,1) 24%, rgba(228,228,228,1) 77%, rgba(173,173,173,1) 100%);
+}
+
+.glassCard{
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

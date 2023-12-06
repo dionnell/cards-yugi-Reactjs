@@ -39,12 +39,12 @@ export const Navbar = () => {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
                 <ul className="navbar-nav ml-auto">
                     
-                    <button
-                        className='nav-item nav-link btn'
-                        
+                    <NavLink 
+                        className={ ({ isActive }) => `nav-link nav-item ${ isActive ? 'active' : ''} ms-3`}
+                        to="/Search"
                     >
-                        search
-                    </button>
+                        Search
+                    </NavLink>
                 </ul>
             </div>
         </nav>
