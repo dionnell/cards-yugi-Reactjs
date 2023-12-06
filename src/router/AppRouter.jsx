@@ -8,7 +8,7 @@ export const AppRouter = () => {
     <>
         <Navbar/>
         <Routes>
-            <Route path="/" element={<Monsters/>} />
+            <Route path="/Monsters" element={<Monsters/>} />
             <Route path="/Spells" element={<Spells/>} />
             <Route path="/Traps" element={<Traps/>} />
             <Route path="/Search" element={<Search/>} />
