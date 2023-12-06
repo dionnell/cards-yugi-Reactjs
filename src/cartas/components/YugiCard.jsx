@@ -68,7 +68,7 @@ export const YugiCard = ({
     }
 
     return (
-    <div className="col ps-2">
+    <div className="col ps-2 ">
         <div style={{width: 200, height: 300}} className="mt-2 mb-2" >
             <ReactFlipCard
                 containerCss={'resizeBasedOnParent'}
@@ -121,7 +121,7 @@ export const YugiCard = ({
                 onRequestClose={handleCloseModal}
                 className="Modal"
                 ariaHideApp={false}
-                
+                overlayClassName="Overlay"
             >
                 <div style={styles.cardFrontModal}>
                     <div className=" container ">

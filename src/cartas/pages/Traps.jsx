@@ -35,23 +35,23 @@ export const Traps = ({value}) => {
                 </div>
 
                 <div className="container">
-                    <div className="row justify-content-around align-items-center">
-                        <div className="col mt-2 mb-2" >
+                    <div className="row row-cols-md-2 row-cols-lg-4 justify-content-around ">
+                        <div className="col-2 mt-2 mb-2 btn-trap-spell" >
                             <button   onClick={onAllRace} className="button-85 btn-trap-spell" >
                                 All Traps
                             </button>
                         </div>
-                        <div className="col-2 mt-2 mb-2" >
+                        <div className="col-2 mt-2 mb-2 btn-trap-spell" >
                             <button  onClick={onNormalRace} className="button-85 btn-trap-spell" >
                                 Normal 
                             </button>
                         </div>
-                        <div className="col-2 mt-2 mb-2" >
+                        <div className="col-2 mt-2 mb-2 btn-trap-spell" >
                             <button onClick={onContinuousdRace} className="button-85 btn-trap-spell">
                                 Continuous 
                             </button>
                         </div>
-                        <div className="col-2 mt-2 mb-2" >
+                        <div className="col-2 mt-2 mb-2 btn-trap-spell" >
                             <button onClick={onCounterRace} className="button-85 btn-trap-spell">
                                 Counter 
                             </button>

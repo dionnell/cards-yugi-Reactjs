@@ -34,7 +34,7 @@ export const ListSpells = ({category}) => {
                         </div>
                       </div>)
         }
-        <div className="row  rows-cols-1 row-cols-md-4 g-3 ">
+        <div className="row  rows-cols-1 row-cols-md-3 row-cols-lg-4 g-3 justify-content-center ">
             { 
                 currentPost.map( image => ( 
                   <YugiCard 
