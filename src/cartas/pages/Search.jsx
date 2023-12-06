@@ -42,7 +42,7 @@ export const Search = () => {
             <form aria-label='form' onSubmit={ onSearchSubmit }>
               <input 
                 type="text"
-                placeholder="Search a hero"
+                placeholder="Search Name in English"
                 className="form-control"
                 name="searchText"
                 autoComplete="off" 
