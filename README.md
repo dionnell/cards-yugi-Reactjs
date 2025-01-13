@@ -11,4 +11,4 @@ las tecnologias usadas son:
 - fetch para consumir la Api
 
 
-  https://react-yugi-cards.netlify.app/
+ url: https://react-yugi-cards.netlify.app/
