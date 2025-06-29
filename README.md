@@ -15,6 +15,8 @@ Esta aplicación web permite explorar y buscar cartas del universo de Yu-Gi-Oh! 
 - ReactJS
 - Consumo de API de cartas Yu-Gi-Oh!
 - CSS Modules o TailwindCSS (según implementación)
+- react-modal
+- reactjs-flip-card
 - Despliegue en Netlify
 
 ## Enlace
